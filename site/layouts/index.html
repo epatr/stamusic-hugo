@@ -1,13 +1,39 @@
 {{ define "main" }}
 
-<h1 class="title">{{ $.Site.Title }}</h1>
+<section class="hero is-dark is-bold is-medium">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-size-2 is-size-1-desktop has-text-weight-light">St. Augustine Music</h1>
+            <h2 class="subtitle has-text-weight-light">St. Augustine, FL's advertisement-free directory of upcoming events in the music community. Facebook can go away now.</h2>
+            <p class="has-text-weight-light">Register below to receive notifications in your inbox. Your information will never be shared with any outside sources. Feel free to read our <a href="/privacy">privacy policy</a>—it's written in plain English.</p>
+        </div>
+    </div>
+</section>
 
-<ul>
-{{ range .Pages }}
-    <li>
-        <a href="{{.Permalink}}">{{.Title}}</a> [{{.Date.Format "2006-01-02"}}]
-    </li>
-{{ end }}
-</ul>
+<div class="container">
+    <div class="section">
+        <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Upcoming Shows</h3>
+        
+        <ul>
+            {{ range where .Pages "Section" "shows" }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a> {{ .Date.Format "Mon, Jan 2, 2006" }}
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Latest Posts</h3>
+        
+        <ul>
+            {{ range where .Pages "Section" "posts" }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a> {{ .Date.Format "Mon, Jan 2, 2006" }}
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
 
 {{ end }}

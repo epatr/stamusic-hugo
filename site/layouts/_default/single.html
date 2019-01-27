@@ -1,8 +1,10 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<article class="content">
-  <img src="{{ .Params.featured_image }}" alt="">
-  <h1 class="title is-1">{{ .Title }}</h1>
-  <main class="article__content">{{- .Content -}}</main>
-  <div class="article__metadata">Posted {{ .Date.Format "January 2, 2006" }} by {{ .Params.author }}</div>
-</article>
+<div class="container section">
+  <article class="content">
+    {{ if isset .Params "legacy" }}<img src="{{ .Params.featured_image }}" alt="">{{ end }}
+    <h1 class="title is-size-3 is-size-1-desktop has-text-weight-light">{{ .Title }}</h1>
+    <main class="article__content">{{- .Content -}}</main>
+    <div class="article__metadata">Posted {{ .Date.Format "January 2, 2006" }} by {{ .Params.author }}</div>
+  </article>
+</div>
 {{ end }}
