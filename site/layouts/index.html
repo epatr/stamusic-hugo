@@ -1,11 +1,29 @@
 {{ define "main" }}
 
-<section class="hero is-dark is-bold is-medium">
+<section class="hero is-dark is-bold">
     <div class="hero-body">
-        <div class="container">
+        <div class="container section">
             <h1 class="title is-size-2 is-size-1-desktop has-text-weight-light">St. Augustine Music</h1>
             <h2 class="subtitle has-text-weight-light">St. Augustine, FL's advertisement-free directory of upcoming events in the music community. Facebook can go away now.</h2>
-            <p class="has-text-weight-light">Register below to receive notifications in your inbox. Your information will never be shared with any outside sources. Feel free to read our <a href="/privacy">privacy policy</a>—it's written in plain English.</p>
+            <p class="has-text-weight-light" style="margin-bottom: 2rem;">Register below to receive notifications in your inbox. Your information will never be shared with any outside sources. Feel free to read our <a href="/privacy">privacy policy</a>—it's written in plain English.</p>
+
+            <form name="newsletter" data-netlify="true" id="newsletter-hero">
+                <div class="columns is-mobile">
+                    <div class="column is-full is-three-fifths-desktop">
+                        <div class="field has-addons">
+                            <div class="control">
+                                <input name="email" class="input is-large" type="text" placeholder="Email address">
+                            </div>
+                            <div class="control">
+                                <a class="button is-large is-primary">
+                                Sign Up
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
         </div>
     </div>
 </section>

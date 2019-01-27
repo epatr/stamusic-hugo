@@ -5,7 +5,7 @@
 
 /* Set custom styles */
 $family-headers: 'Oswald', $family-sans-serif;
-$primary: $blue;
+// $primary: $blue;
 
 /* Import the rest of Bulma */
 @import "~bulma/bulma";
