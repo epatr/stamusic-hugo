@@ -1,8 +1,8 @@
 {
-  "name": "victor-hugo",
+  "name": "stamusic-hugo",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
-  "repository": "netlify/victor-hugo",
+  "description": "St. Augustine, FL music project",
+  "repository": "epatr/stamusic-hugo",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
