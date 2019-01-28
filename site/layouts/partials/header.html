@@ -20,19 +20,21 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <nav class="navbar is-mobile">
-    <div class="navbar-brand">
-        <a href="/" class="navbar-item navbar-title">{{ $.Site.Title }}</a>
-        <a href="/events/" class="navbar-item">Shows</a>
-        <div class="navbar-burger" data-target="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item navbar-title">{{ $.Site.Title }}</a>
+            <a href="/events/" class="navbar-item">Shows</a>
+            <div class="navbar-burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
-    <div class="navbar-menu" id="navMenu">
-        <div class="navbar-start has-text-centered">
-            <a href="/venues/" class="navbar-item">Venues</a>
-            <a href="/about/" class="navbar-item">About</a>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start has-text-centered">
+                <a href="/venues/" class="navbar-item">Venues</a>
+                <a href="/about/" class="navbar-item">About</a>
+            </div>
         </div>
     </div>
 </nav>

@@ -97,7 +97,7 @@ aside.menu {
 }
 
 .navbar {
-  @extend .hero.is-light.is-bold;
+  @extend .hero.is-light;
 
   // End of the navbar
   &-end {
