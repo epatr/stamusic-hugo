@@ -23,15 +23,17 @@
                     </div>
                 </div>
                 <div class="columns is-mobile">
-                    <div class="control">
-                        <label class="radio">
-                            <input type="radio" name="foobar">
-                            Regular updates
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="foobar" checked>
-                            Less frequent updates (once a week)
-                        </label>
+                    <div class="column">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="foobar" checked>
+                                Regular updates
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="foobar">
+                                Less frequent updates (once a month)
+                            </label>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -40,30 +42,31 @@
     </div>
 </section>
 
-<div class="container">
-    <div class="section">
-        <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Upcoming Shows</h3>
-        
-        <ul>
-            {{ range where .Pages "Section" "shows" }}
-                <li>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a> {{ .Date.Format "Mon, Jan 2, 2006" }}
-                </li>
-            {{ end }}
-        </ul>
-    </div>
+        <div class="container section is-light is-bold">
+
+            <div class="columns">
+                <div class="column">
+                    <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Upcoming Shows</h3>
+                    
+                    <ul>
+                        {{ range where .Pages "Section" "shows" }}
+                            {{ partial "li.html" . }}
+                        {{ end }}
+                    </ul>
+                </div>
     
-    <div class="section">
-        <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Latest Posts</h3>
-        
-        <ul>
-            {{ range where .Pages "Section" "posts" }}
-                <li>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a> {{ .Date.Format "Mon, Jan 2, 2006" }}
-                </li>
-            {{ end }}
-        </ul>
-    </div>
-</div>
+                
+                <div class="column">
+                    <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Latest Posts</h3>
+                    
+                    <ul>
+                        {{ range where .Pages "Section" "posts" }}
+                            {{ partial "li.html" . }}
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
 
 {{ end }}

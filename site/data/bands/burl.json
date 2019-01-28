@@ -1,0 +1,16 @@
+{
+    "Name": "Burl",
+    "City": "St. Augustine",
+    "Members": [
+        "David Lowther",
+        "Alan Mills",
+        "Eric Patrick"
+    ],
+    "URL": {
+        "Website": "https://burl.rocks",
+        "Bandcamp": "https://burlmusic.bandcamp.com",
+        "Spotify": "https://open.spotify.com/album/2kzNmnkGZmQvnqFjCSPQig",
+        "Facebook": "https://www.facebook.com/burlmusic",
+        "Instagram": "https://instagram.com/burlmusic"
+    }
+}

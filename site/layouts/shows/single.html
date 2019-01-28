@@ -4,8 +4,18 @@
   <article class="content">
     {{ if isset .Params "featured_image" }}<img src="{{ .Params.featured_image }}" alt="">{{ end }}
     <h1 class="title is-size-3 is-size-1-desktop has-text-weight-light">{{ .Title }}</h1>
+
+    
+    <div class="article__metadata">{{ .Params.showtime }} at {{ .Params.venue }}</div>
+
     <main class="article__content">{{- .Content -}}</main>
-    <div class="article__metadata">Posted {{ .Date.Format "January 2, 2006" }} by {{ .Params.author }}</div>
+
+    <ul>
+    {{ range .Params.bands }}
+        <li>{{ . }}</li>
+    {{ end }}
+    </ul>
+
   </article>
 </div>
 
