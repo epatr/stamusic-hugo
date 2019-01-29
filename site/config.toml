@@ -2,3 +2,5 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "St. Augustine Music"
+
+buildFuture = true

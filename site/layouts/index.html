@@ -49,15 +49,13 @@
                     <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Upcoming Shows</h3>
                     
                     <ul>
-                        {{ range where .Pages "Section" "shows" }}
-                            {{ partial "li.html" . }}
-                        {{ end }}
 
                         {{ $events := where .Site.RegularPages "Section" "shows" }}
                         {{ $events := $events | intersect (where $events "Date" "ge" now) | first 5 }}
                         {{- range $events -}}
-                            <li>Hello</li>
+
                             {{ partial "li.html" . }}
+
                         {{- end -}}
                         
                     </ul>
