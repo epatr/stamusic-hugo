@@ -12,11 +12,3 @@ bands: [
 ]
 ---
 
-Hey this is a show coming up. Why won't this file show up?
-
-Oh god is it because it's in the future and I'm a fucking idiot? 
-
-* Minimum Rage
-* Reels
-* Burl
-* Liquid Limbs
