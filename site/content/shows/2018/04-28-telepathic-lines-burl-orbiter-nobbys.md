@@ -10,6 +10,6 @@ bands: [
     "Burl",
     "Orbiter"
 ]
-featured_image: "https://cdn.stamusic.org/file/stamusic/burlnobbysopengraph-1024x537.jpg"
+featured_image: "https://cdn.stamusic.org/file/stamusic/uploads-2018-04-burlnobbysopengraph-1024x537.jpg"
 ---
 
