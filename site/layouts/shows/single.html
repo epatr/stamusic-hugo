@@ -8,13 +8,15 @@
     
     <div class="article__metadata">{{ .Date.Format "January 2, 2006" }} at {{ .Params.venue }}</div>
 
-    <main class="article__content">{{- .Content -}}</main>
+    {{ if .Content }} <main class="article__content">{{- .Content -}}</main> {{ end }}
 
-    <ul>
-    {{ range .Params.bands }}
-        <li>{{ . }}</li>
+    {{ if .Params "bands" }}
+      <ul>
+      {{ range .Params.bands }}
+          <li>{{ . }}</li>
+      {{ end }}
+      </ul>
     {{ end }}
-    </ul>
 
   </article>
 </div>

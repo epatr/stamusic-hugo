@@ -3,14 +3,14 @@
 <section class="hero is-dark is-bold">
     <div class="hero-body">
         <div class="container section has-text-centered">
-            <h1 class="title is-size-2 is-size-1-desktop has-text-weight-light">St. Augustine Music Project</h1>
-            <h2 class="subtitle has-text-weight-light">St. Augustine's ad-free resource for arts & entertainment listings. Facebook can go away now.</h2>
-            <p class="has-text-weight-light" style="margin-bottom: 2rem;">Register below to receive show notifications in your inbox. Choose the frequency that you want to receive updates. Your information will never be shared with any outside sources. Feel free to read our <a href="/privacy">privacy policy</a>—it's written in plain English.</p>
+            <h1 class="title is-size-2 is-size-1-desktop has-text-weight-light">St. Augustine Music</h1>
+            <h2 class="subtitle has-text-weight-light">St. Augustine's community-run directory for arts & entertainment events. Facebook;s closed-wall garden can go away now.</h2>
+            <p class="has-text-weight-light" style="margin-bottom: 2rem;">Register below to receive show notifications in your inbox. Make sure to choose the frequency that you want to receive updates so we don't get flagged as spam. Your information will never be shared with any outside sources. Feel free to read our <a href="/privacy">privacy policy</a>—it's written in plain English.</p>
 
             <form name="newsletter" data-netlify="true" id="newsletter-hero">
                 <div class="columns is-mobile">
                     <div class="column"></div>
-                    <div class="column is-full-mobile is-three-quarters-tablet is-two-thirds-desktop">
+                    <div class="column is-full-mobile is-three-quarters-tablet is-one-third-desktop">
                         <div class="field has-addons">
                             <div class="control is-expanded">
                                 <input name="email" class="input is-large" type="text" placeholder="Email address">
@@ -67,10 +67,10 @@
     
                 
                 <div class="column">
-                    <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Latest Posts</h3>
+                    <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Recent Posts</h3>
                     
                     <ul>
-                        {{ range where .Pages "Section" "posts" }}
+                        {{ range where .Pages "Section" "posts" | first 5 }}
                             {{ partial "li.html" . }}
                         {{ end }}
                     </ul>
