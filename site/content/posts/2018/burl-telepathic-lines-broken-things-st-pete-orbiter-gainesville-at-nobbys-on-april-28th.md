@@ -4,7 +4,7 @@ author: Eric Patrick
 type: post
 date: 2018-04-01T14:13:33+00:00
 aliases: [/burl-telepathic-lines-broken-things-st-pete-orbiter-gainesville-at-nobbys-on-april-28th/]
-featured_image: https://cdn.stamusic.org/file/stamusic/burlnobbysopengraph.jpg
+featured_image: https://cdn.stamusic.org/file/stamusic/uploads-2018-04-burlnobbysopengraph.jpg
 categories:
   - Announcements
 

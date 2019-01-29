@@ -4,7 +4,7 @@ author: Eric Patrick
 type: post
 date: 2017-07-13T21:50:17+00:00
 aliases: [/ten-volt-shock-from-germany-at-planet-sarbez-on-july-31st/]
-featured_image: https://cdn.stamusic.org/file/stamusic/12188151_1171084676265143_4016292320915641230_o.jpg
+featured_image: https://cdn.stamusic.org/file/stamusic/uploads-2017-07-12188151_1171084676265143_4016292320915641230_o.jpg
 ---
 
 Germany's Ten Volt Shock is on tour from Germany with YC-CY. St. Augustine's Tubers will also be performing as a four-piece! 

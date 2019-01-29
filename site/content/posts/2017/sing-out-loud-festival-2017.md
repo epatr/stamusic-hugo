@@ -3,7 +3,7 @@ title: Sing Out Loud Festival 2017
 author: Eric Patrick
 date: 2017-08-17T18:01:17+00:00
 aliases: [/sing-out-loud-festival-2017/]
-featured_image: https://cdn.stamusic.org/file/stamusic/19388551_1945255499029567_5470416835843564230_o.jpg
+featured_image: https://cdn.stamusic.org/file/stamusic/uploads-2017-08-19388551_1945255499029567_5470416835843564230_o.jpg
 ---
 
 Sing Out Loud Festival is returning this year, starting on Friday, September 8th, and spanning the following Friday/Saturday/Sundays up to September 24th. All events are free and open to the public. 
