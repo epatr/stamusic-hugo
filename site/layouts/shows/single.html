@@ -6,7 +6,7 @@
     <h1 class="title is-size-3 is-size-1-desktop has-text-weight-light">{{ .Title }}</h1>
 
     
-    <div class="article__metadata">{{ .Params.showtime }} at {{ .Params.venue }}</div>
+    <div class="article__metadata">{{ .Date.Format "January 2, 2006" }} at {{ .Params.venue }}</div>
 
     <main class="article__content">{{- .Content -}}</main>
 

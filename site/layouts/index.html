@@ -52,6 +52,14 @@
                         {{ range where .Pages "Section" "shows" }}
                             {{ partial "li.html" . }}
                         {{ end }}
+
+                        {{ $events := where .Site.RegularPages "Section" "shows" }}
+                        {{ $events := $events | intersect (where $events "Date" "ge" now) | first 5 }}
+                        {{- range $events -}}
+                            <li>Hello</li>
+                            {{ partial "li.html" . }}
+                        {{- end -}}
+                        
                     </ul>
                 </div>
     
@@ -64,6 +72,7 @@
                             {{ partial "li.html" . }}
                         {{ end }}
                     </ul>
+
                 </div>
             </div>
 
