@@ -4,6 +4,7 @@ author: Eric Patrick
 type: post
 date: 2018-02-01T16:28:35+00:00
 aliases: [/shellshag-ny-minimum-rage-86-hope-at-nobbys-on-february-20th/]
+featured_image: https://cdn.stamusic.org/file/stamusic/uploads-2018-02-27023452_10214051620298815_2668219385196033247_o-600x315.jpg
 categories:
   - Announcements
 

@@ -5,7 +5,7 @@
 
 /* Set custom styles */
 $family-headers: 'Oswald', $family-sans-serif;
-$primary: $blue;
+// $primary: $blue;
 
 /* Import the rest of Bulma */
 @import "~bulma/bulma";
@@ -21,6 +21,10 @@ p {
   -ms-word-break: break-all;
   word-break: break-word;
   word-break: break all;
+}
+
+.radio:hover {
+  color: inherit;
 }
 
 .article {
@@ -97,7 +101,7 @@ aside.menu {
 }
 
 .navbar {
-  @extend .hero.is-light.is-bold;
+  @extend .hero.is-light;
 
   // End of the navbar
   &-end {

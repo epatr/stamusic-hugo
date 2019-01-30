@@ -1,9 +1,13 @@
 {{ define "main" }}
 
-<h1 class="title is-1">Page not found</h1>
-
-<h3 class="title"><a href="{{ "/" | relURL }}">Return to the homepage</a></h3>
-
-<p>We've recently moved from WordPress, and as a result some esoteric links may not be available. If this is causing great distress, please feel free to <a href="mailto:stamusic.org@gmail.com">send us an email</a>!</p>
+<section class="hero is-fullheight-with-navbar">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-size-2 is-size-1-desktop has-text-weight-light">Page not found</h1>
+      <h3 class="title is-size-5 is-size-3-desktop has-text-weight-light"><a href="{{ "/" | relURL }}">Click here to return to the homepage</a></h3>
+      <p>We've recently moved from WordPress, and as a result some of our old may not be available. If this is causing great distress, please feel free to <a href="mailto:stamusic.org@gmail.com">send us an email</a>!</p>
+    </div>
+  </div>
+</section>
 
 {{ end }}

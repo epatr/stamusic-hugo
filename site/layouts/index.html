@@ -1,13 +1,83 @@
 {{ define "main" }}
 
-<h1 class="title">{{ $.Site.Title }}</h1>
+<section class="hero is-dark is-bold">
+    <div class="hero-body">
+        <div class="container section has-text-centered">
+            <h1 class="title is-size-2 is-size-1-desktop has-text-weight-light">St. Augustine Music</h1>
+            <h2 class="subtitle has-text-weight-light">St. Augustine's community-run directory for arts & entertainment events. No tracking, no ads.</h2>
+            <p class="has-text-weight-light" style="margin-bottom: 2rem;">Register below to receive show notifications in your inbox. Make sure to choose the frequency that you want to receive updates so we don't get flagged as spam. Your information will never be shared with any outside sources. Feel free to read our <a href="/privacy">privacy policy</a>—it's written in plain English.</p>
 
-<ul>
-{{ range .Pages }}
-    <li>
-        <a href="{{.Permalink}}">{{.Title}}</a> [{{.Date.Format "2006-01-02"}}]
-    </li>
-{{ end }}
-</ul>
+            <form name="newsletter" data-netlify="true" id="newsletter-hero">
+                <div class="columns is-mobile">
+                    <div class="column"></div>
+                    <div class="column is-full-mobile is-three-quarters-tablet is-one-third-desktop">
+                        <div class="field has-addons">
+                            <div class="control is-expanded">
+                                <input name="email" class="input is-large" type="text" placeholder="Email address">
+                            </div>
+                            <div class="control">
+                                <a class="button is-large is-info">
+                                Sign Up
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column"></div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column"></div>
+                    <div class="column is-narrow">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="foobar" checked>
+                                Regular updates
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="foobar">
+                                Less frequent updates (once a month)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+        <div class="container section is-light is-bold">
+
+            <div class="columns">
+                <div class="column">
+                    <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Upcoming Shows</h3>
+                    
+                    <ul>
+
+                        {{ $events := where .Site.RegularPages "Section" "shows" }}
+                        {{ $events := $events | intersect (where $events "Date" "ge" now) | first 5 }}
+                        {{- range $events -}}
+
+                            {{ partial "li.html" . }}
+
+                        {{- end -}}
+                        
+                    </ul>
+                </div>
+    
+                
+                <div class="column">
+                    <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Recent Posts</h3>
+                    
+                    <ul>
+                        {{ range where .Pages "Section" "posts" | first 5 }}
+                            {{ partial "li.html" . }}
+                        {{ end }}
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
 
 {{ end }}

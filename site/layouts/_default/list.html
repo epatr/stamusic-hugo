@@ -1,0 +1,23 @@
+{{ define "main" }}
+    <div class="container section is-light is-bold">
+
+        <div class="columns">
+
+            <div class="column">
+                
+                <h1 class="title is-size-2 is-size-1-desktop is-capitalized has-text-weight-light">Latest {{.Title }}</h1>
+
+                <p> {{.Content }}</p>
+                
+                <ul>
+                    {{ range .Pages }}
+                        {{ partial "li.html" . }}
+                    {{ end }}
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+{{ end }}
