@@ -7,7 +7,7 @@
                 <h3 class="title is-size-4 is-size-3-desktop is-capitalized has-text-weight-light">Latest Shows</h3>
                 
                 <ul>
-                    {{ range where .Pages "Section" "shows" | first 5 }}
+                    {{ range where .Pages "Section" "shows" }}
                         {{ partial "li.html" . }}
                     {{ end }}
                 </ul>
