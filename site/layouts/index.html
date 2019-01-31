@@ -58,7 +58,7 @@
                         {{ $events := $events | intersect (where $events "Date" "ge" now) | first 5 }}
                         {{- range $events -}}
 
-                            {{ partial "li.html" . }}
+                            {{ partial "views/li.html" . }}
 
                         {{- end -}}
                         
@@ -71,7 +71,7 @@
                     
                     <ul>
                         {{ range where .Pages "Section" "posts" | first 5 }}
-                            {{ partial "li.html" . }}
+                            {{ partial "views/li.html" . }}
                         {{ end }}
                     </ul>
 
