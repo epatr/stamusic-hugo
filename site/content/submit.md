@@ -13,34 +13,35 @@ Use the form below to submit a show.
         </div>
     </div>
     <div class="field">
-        <label for="eventDate" class="label">Date</label>
-        <div class="control">
-            <input class="input" type="text" name="eventDate" id="eventDate">
-        </div>
-    </div>
-    <div class="field">
         <label for="eventPerformers" class="label">Performers</label>
         <div class="control">
             <input class="input" type="text" name="eventPerformers" id="eventPerformers">
         </div>
     </div>
     <div class="field">
+        <label for="eventDate" class="label">Date</label>
+        <div class="control">
+            <input class="input" type="text" name="eventDate" id="eventDate" placeholder="2019-02-15">
+        </div>
+    </div>
+    <div class="field">
         <label for="eventVenue" class="label">Venue</label>
         <div class="control">
-            <input class="input" type="text" name="eventVenue" id="eventVenue">
+            <input class="input" type="text" name="eventVenue" id="eventVenue" placeholder="Wacky Warehouse">
         </div>
     </div>
     <div class="field">
         <label for="eventCost" class="label">Cost</label>
         <div class="control">
-            <input class="input" type="text" name="eventCost" id="eventCost">
+            <input class="input" type="text" name="eventCost" id="eventCost" placeholder="$5">
         </div>
     </div>
     <div class="field">
-        <label for="eventImage" class="label">Flyer</label>
+        <label for="eventImage" class="label">Flyer URL</label>
         <div class="control">
-            <input class="input" type="text" name="eventImage" id="eventImage">
+            <input class="input" type="text" name="eventImage" id="eventImage" placeholder="https://">
         </div>
+        <p class="help">You can upload images to <a href="https://imgur.com">Imgur</a> if you don't have a URL for your flyer.</p>
     </div>
     <div class="field">
         <label for="eventAuthor" class="label">Your name</label>
